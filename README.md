@@ -35,10 +35,12 @@ Target:
 - Stay: The number of days that each patient stays at hospital
 
 2. Data Preprocessing
+
 In order to perform Exploratory Data Analyses, I first made sure to check with NaN and convert "age" and "stay" into numerical variable for meaningful EDA.
 I replaced all NaN in "Bed Grad" and "City_Code_Patient" to 0.
 
 3. Exploratory Data Analyses
+
 The purpose of the exploratory data analyses was to 
 - identify relationship between each feature and target
 - identify correlation between features
@@ -54,6 +56,7 @@ Main conclusions of the Exploraty Data Analyses were:
 - As predicted, patients who showed more sevierity of illness tended to stay longer.
 
 4. Developing model
+
 Gradient boosting classification model was used. To select the best hyperparameters for n_estimators, learning_rate and max_depth,
 I ran hyperparameter tuning with GridSearchCV that used Stratified 5-fold Cross validation.
 First hyperparameter tuning was aimed at choosing best n_estimators and learning_rate, which was 0.1 and 1500, respectively.
@@ -62,6 +65,7 @@ With the best hyperparameters, model was fitted.
 Feature importance plot was generated based on the final model, which showed the number of visitors with patients was the dominating importance over any other features.
 
 5. Deploy solution
+
 Predicted numeric values for the target(Stay) was again converted into string, which was the original data type.
 I stored predicted values into the submission file.
 
