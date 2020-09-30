@@ -55,6 +55,8 @@ Main conclusions of the Exploraty Data Analyses were:
 - Age was weakly related with the length of stay. Older people tended to stay longer in the hospital, but there was a lot of variation.
 - As predicted, patients who showed more sevierity of illness tended to stay longer.
 
+![alt text](https://github.com/why-young/COVID19/blob/master/num_visitors.png)
+
 4. Developing model
 
 Gradient boosting classification model was used. To select the best hyperparameters for n_estimators, learning_rate and max_depth,
