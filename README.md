@@ -56,6 +56,8 @@ Main conclusions of the Exploraty Data Analyses were:
 - As predicted, patients who showed more sevierity of illness tended to stay longer.
 
 ![alt text](https://github.com/why-young/COVID19/blob/master/num_visitors.png)
+![alt text](https://github.com/why-young/COVID19/blob/master/age.png)
+![alt text](https://github.com/why-young/COVID19/blob/master/severity.png)
 
 4. Developing model
 
@@ -65,6 +67,8 @@ First hyperparameter tuning was aimed at choosing best n_estimators and learning
 Second hyperparameter tuning was aimed at choosing the best max_depth, which was 3.
 With the best hyperparameters, model was fitted.
 Feature importance plot was generated based on the final model, which showed the number of visitors with patients was the dominating importance over any other features.
+
+![alt text](https://github.com/why-young/COVID19/blob/master/feature_imp_plot.png)
 
 5. Deploy solution
 
